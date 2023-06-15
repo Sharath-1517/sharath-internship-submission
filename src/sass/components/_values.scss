@@ -1,0 +1,48 @@
+.values {
+    display: flex;
+    flex-direction: column;
+    background: #E4EFF1;
+    padding: 2.6rem 0;
+
+    &_heading {
+        text-align: center;
+        text-transform: uppercase;
+        color: #006752;
+    }
+
+    &--container {
+        display: grid;
+        justify-content: center;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3rem auto;
+        width: min(52%, 95%);
+        gap: .7em;
+
+        &__value {
+            display: flex;
+            width: min(450px, 100%);
+            gap: 1em;
+            text-align: start;
+            border-bottom: 3px solid;
+            padding-bottom: .7em;
+            border-image: radial-gradient(ellipse at center, #006752 75%, white 100%) 1;
+
+            &__details {
+                &_heading {
+                    font-size: 1.7rem;
+                    margin-top: 5px;
+                }
+            }
+            img {
+                border-radius: 100%;
+                max-width: 60px;
+                max-height: 60px;
+                align-self: start;
+            }
+
+        }
+
+    }
+
+}

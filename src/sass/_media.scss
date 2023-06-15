@@ -1,0 +1,13 @@
+@use './attributes' as *;
+
+html {
+    @include for-mobile-only {
+        font-size: 14px;
+        .values {
+            margin: 0 10px;
+            &--container {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

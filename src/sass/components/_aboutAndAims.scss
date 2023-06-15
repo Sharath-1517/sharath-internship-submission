@@ -1,0 +1,43 @@
+// @use '../attributes' as *;
+
+.about {
+    background-image: url('/images/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    position: relative;
+
+    &_heading {
+        padding: 3rem 4.5rem;
+        color: #ffffff;
+        font-size: 2.5rem;
+    }
+}
+
+.aims {
+    text-align: center;
+    padding-bottom: 2rem;
+    .aim {
+        display: grid;
+        gap: .75em;
+        margin: 3rem 0;
+        place-items: center;
+        &_heading {
+            font-size: 2.3rem;
+            background: linear-gradient(to right, #52A4A1, #52A4A1, #ffffff, #ffffff);
+            padding: .3em 0;
+            width: 100%;
+            color: #006752;
+            font-weight: 700;
+        }
+        &:nth-child(2) {
+            .aim_heading{
+                background: linear-gradient(to left, #52A4A1, #52A4A1, #ffffff, #ffffff);
+            }
+        }
+        &_para {
+            width: min(800px, 95%);
+            font-weight: 600;
+        }
+    }
+}

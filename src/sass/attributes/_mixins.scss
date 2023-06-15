@@ -1,0 +1,27 @@
+@mixin font-fam($font) {
+    font-family: $font, sans-serif;
+}
+
+@mixin for-mobile-only {
+    @media (width < 600px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (width >= 600px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (width < 900px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (width >= 900px) {
+        @content;
+    }
+}

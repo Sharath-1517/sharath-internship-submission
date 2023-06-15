@@ -1,0 +1,13 @@
+@use './config';
+@use './attributes' as *;
+@use './components' as *;
+@use './media';
+
+.container {
+    width: min(1228px, 95%);
+    margin: 0 auto;
+}
+
+body {
+    @include font-fam("Montserrat")
+}
