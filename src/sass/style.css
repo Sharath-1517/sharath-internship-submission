@@ -68,7 +68,7 @@ img {
   place-items: center;
   grid-template-columns: repeat(2, 1fr);
   margin: 3rem auto;
-  width: 52%;
+  width: min(1228px, 100%);
   gap: 0.7em;
 }
 .values--container__value {
